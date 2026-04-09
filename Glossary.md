@@ -4,94 +4,101 @@ Common terms you'll encounter throughout this curriculum.
 
 ## A
 - **API** — Application Programming Interface. A way for programs to talk to each other.
-- **Argparse** — Python module for parsing command-line arguments.
+- **ASR** — Automatic Speech Recognition. Speech to text.
+- **Attention** — The mechanism in transformers that lets each token "look at" other relevant tokens. The key innovation behind modern LLMs.
 
 ## B
-- **BMC** — Baseboard Management Controller. A mini-computer on your motherboard that lets you manage the server remotely (power on/off, read sensors, see console). Think of it as the server's remote control.
-- **Bind Mount** — A way to make a folder on your host machine appear inside a Docker container.
+- **Backpropagation** — The algorithm used to adjust model weights during training. Calculates how much each weight contributed to the error.
+- **Batch Size** — Number of inputs processed simultaneously. Larger = more efficient but uses more memory.
+- **BMC** — Baseboard Management Controller. A mini-computer on the motherboard for remote management.
+- **BERT** — Bidirectional Encoder Representations from Transformers. A widely-used embedding/language model.
 
 ## C
-- **CLI** — Command Line Interface. Typing commands instead of clicking buttons.
-- **Container** — A lightweight, self-contained package that runs an application with everything it needs. Like a VM but much lighter.
-- **CUDA** — Compute Unified Device Architecture. NVIDIA's platform for running computations on GPUs.
-- **curl** — Command-line tool for making HTTP requests. Used to test APIs and download files.
+- **Checkpoint** — A saved snapshot of model state during training. Used to resume if training crashes.
+- **CNN** — Convolutional Neural Network. Architecture designed for processing images.
+- **Context Window** — Maximum number of tokens a model can process in a single request. Like the model's working memory.
+- **CUDA** — NVIDIA's programming platform for running computations on GPUs.
+- **cuDNN** — CUDA Deep Neural Network library. Optimized neural network operations.
 
 ## D
-- **Daemon** — A background process that runs continuously (like a web server).
-- **Docker** — The most popular tool for creating and running containers.
-- **DGX** — NVIDIA's pre-built AI supercomputer. You work with these.
-- **Directory** — Another word for folder.
+- **Diffusion Model** — A generative model that starts with noise and gradually refines it into an image (or audio).
+- **Docker** — Tool for creating and running containers.
+- **DGX** — NVIDIA's pre-built AI supercomputer.
 
 ## E
-- **Environment Variable** — A setting stored in your shell session (like a preference the system remembers).
-- **Exit Code** — A number a program returns when it finishes. 0 = success, anything else = error.
+- **ECC** — Error-Correcting Code. GPU memory that can detect and sometimes fix bit errors. Uncorrectable ECC errors = hardware problem.
+- **Epoch** — One complete pass through the entire training dataset.
+- **Embedding** — A numerical representation (vector) of text, images, or other data that captures meaning.
 
 ## F
-- **Filesystem** — How files and folders are organized on a computer.
+- **Fine-Tuning** — Taking a pre-trained model and training it further on specialized data.
+- **FlashAttention** — An optimized implementation of attention that uses less memory and is faster.
 
 ## G
-- **Git** — Version control system. Tracks changes to files over time.
-- **GPU** — Graphics Processing Unit. The chip that does the heavy math for AI.
-- **grep** — Command to search for text inside files. Incredibly useful for log reading.
+- **GAN** — Generative Adversarial Network. Two networks competing: one generates, one discriminates.
+- **Gradient** — The direction and magnitude to adjust weights to reduce errors during training.
+- **Gradient Descent** — The optimization process of following gradients to find the best weights.
 
 ## H
-- **HGX** — NVIDIA's high-performance GPU baseboard used in servers. Similar to DGX but different form factor.
+- **HBM** — High Bandwidth Memory. The type of memory used on datacenter GPUs. Much faster than GDDR.
+- **HGX** — NVIDIA's high-performance GPU baseboard. Different form factor from DGX.
 
 ## I
-- **Image (Docker)** — A snapshot of a container. The blueprint. The container is the running instance.
-- **Inference** — Using a trained AI model to make predictions. This is what happens in production.
-- **InfiniBand** — A very fast network connection used between GPU servers.
-
-## J
-- **JSON** — JavaScript Object Notation. A common format for structured data. Looks like `{"key": "value"}`.
+- **Inference** — Using a trained model to make predictions. The production phase.
+- **InfiniBand** — A very high-speed network technology used between GPU servers.
 
 ## K
-- **Kernel** — The core of the operating system that manages hardware and processes.
+- **KV Cache** — Key-Value cache used during LLM inference to avoid recomputing attention for previous tokens. Uses GPU memory proportional to context length.
 
 ## L
-- **Log** — A file that records what a program or system has been doing. Your bread and butter.
-- **ls** — Command to list files and directories.
+- **LLM** — Large Language Model. A model trained on massive text data to understand and generate language.
+- **Loss** — A number measuring how wrong the model's predictions are. Lower = better. Going down during training = learning.
+- **Learning Rate** — How large of an adjustment to make to weights each training step.
 
 ## M
-- **Mount** — Attaching a filesystem or storage device so the OS can access it.
+- **Model** — A file (or set of files) containing learned weights that can make predictions.
+- **Multi-modal** — A model that can process multiple types of input (text + images, etc.).
 
 ## N
-- **NCCL** — NVIDIA Collective Communications Library. How GPUs talk to each other during training.
-- **NVLink** — NVIDIA's high-speed connection between GPUs. Much faster than PCIe.
+- **NCCL** — NVIDIA Collective Communications Library. Handles GPU-to-GPU communication during distributed training.
+- **NVLink** — NVIDIA's high-speed interconnect between GPUs. Up to 900 GB/s bidirectional.
 - **NVSM** — NVIDIA System Management. Tool for monitoring DGX health.
+- **nvidia-smi** — The primary tool for checking GPU status, memory, utilization, and errors.
 
 ## O
-- **OS** — Operating System (Linux, Windows, etc.)
+- **OOM** — Out of Memory. The GPU ran out of VRAM. One of the most common errors.
 
 ## P
-- **Package Manager** — Tool that installs and manages software (apt, pip, yum).
-- **PCIe** — Peripheral Component Interconnect Express. The standard connection between GPU and motherboard.
-- **Process** — A running program. Every program you start creates at least one process.
-- **Python** — Programming language heavily used in AI/ML.
+- **Parameters** — The learnable numbers (weights) inside a model. "70B parameters" = 70 billion numbers.
+- **Pipeline Parallelism** — Splitting a model's layers across different GPUs (like an assembly line).
+- **Pre-training** — Training a model from scratch on massive data. Very expensive.
+- **PyTorch** — The dominant AI framework. Most models and training scripts use this.
+
+## Q
+- **Quantization** — Reducing the precision of model weights (e.g., 16-bit → 4-bit) to use less memory and run faster.
 
 ## R
-- **Repository (Repo)** — A collection of files tracked by Git.
-- **RoCE** — RDMA over Converged Ethernet. A way to do fast network communication over standard Ethernet.
+- **RAG** — Retrieval-Augmented Generation. Combining document search with LLM generation.
+- **RNN** — Recurrent Neural Network. Processes sequences one step at a time. Largely replaced by transformers.
 
 ## S
-- **Shell** — The program that interprets your command-line commands (bash, zsh, PowerShell).
-- **SSH** — Secure Shell. A way to remotely log into another computer securely.
-- **stdout/stderr** — Standard output and standard error. Where programs send their text output and error messages.
-
-## T
-- **TensorRT** — NVIDIA's library for optimizing AI models to run faster on GPUs.
-- **Triton Inference Server** — NVIDIA's server software for deploying AI models. Not to be confused with the Triton programming language.
-- **Tensor** — A multi-dimensional array of numbers. The basic data structure in AI. A scalar is a 0D tensor, a vector is 1D, a matrix is 2D, and so on.
-
-## U
-- **UUID** — Universally Unique Identifier. A long random string that uniquely identifies something.
+- **SafeTensors** — Modern, secure file format for storing model weights.
+- **Self-Attention** — The mechanism in transformers where each token considers all other tokens in the input.
+- **Step/Iteration** — Processing one batch of training data and updating weights once.
+- **Tensor** — A multi-dimensional array of numbers. The basic data structure in AI.
+- **Tensor Parallelism** — Splitting a single layer's computation across multiple GPUs.
+- **TensorRT** — NVIDIA's inference optimization library. Compiles models for faster execution.
+- **Token** — A piece of text processed by a model. Roughly 3/4 of an English word.
+- **Training** — The process of adjusting model weights using data so the model learns to make good predictions.
+- **Transformer** — The neural network architecture behind all modern LLMs. Uses self-attention.
+- **Triton Inference Server** — NVIDIA's server software for deploying AI models as APIs.
+- **TTFT** — Time To First Token. How quickly an LLM starts generating a response.
 
 ## V
-- **vLLM** — A fast inference engine for running large language models.
-- **Volume (Docker)** — Docker's way of persisting data beyond the life of a container.
+- **vLLM** — A popular open-source inference server for LLMs. Handles batching and memory efficiently.
 
 ## W
-- **Working Directory** — The folder you're currently "in" in your terminal.
+- **Weights** — The learned numbers inside a model that determine its behavior. Same as parameters.
 
 ---
 

@@ -6,14 +6,15 @@ Welcome to your structured AI learning path, Cynthia. This vault is your classro
 
 | # | Module | Status | Description |
 |---|--------|--------|-------------|
-| 1 | [[M01 - Linux & CLI Foundations]] | 🔵 In Progress | Command line basics, navigation, file operations |
-| 2 | [[M02 - Containers & Docker]] | ⬜ Not Started | Docker, NVIDIA Container Runtime, GPU containers |
-| 3 | [[M03 - Python for AI Ops]] | ⬜ Not Started | Python basics through log parsing scripts |
-| 4 | [[M04 - AI Inference Stack]] | ⬜ Not Started | TensorRT, vLLM, Triton, inference servers |
-| 5 | [[M05 - CUDA & GPU Computing]] | ⬜ Not Started | GPU utilization, memory, NCCL errors |
-| 6 | [[M06 - DGX Software Stack]] | ⬜ Not Started | BMC, IGSM, NVSM, Skyplane, DGX tools |
-| 7 | [[M07 - Networking for AI]] | ⬜ Not Started | InfiniBand, NVLink, RoCE, interconnects |
-| 8 | [[M08 - Real-World Troubleshooting]] | ⬜ Not Started | Reading real logs, diagnosing real issues |
+| 1 | [[M01 - AI and ML Foundations]] | 🔵 In Progress | Core concepts — what AI/ML actually is, how models work, what GPUs do |
+| 2 | [[M02 - The NVIDIA AI Software Stack]] | ⬜ Not Started | CUDA, cuDNN, TensorRT, NCCL — the software layers on your hardware |
+| 3 | [[M03 - Containers and AI Workloads]] | ⬜ Not Started | Docker, NGC containers, NVIDIA Container Runtime, running models |
+| 4 | [[M04 - Python for AI Operations]] | ⬜ Not Started | Reading AI scripts, working with model files, diagnostic Python |
+| 5 | [[M05 - Inference Deep Dive]] | ⬜ Not Started | vLLM, TensorRT-LLM, Triton Inference Server, serving models |
+| 6 | [[M06 - Training Fundamentals]] | ⬜ Not Started | Distributed training, parallelism, NCCL errors, training logs |
+| 7 | [[M07 - DGX-HGX Software Stack]] | ⬜ Not Started | BMC, IGSM, NVSM, firmware — Dell-specific tools |
+| 8 | [[M08 - Networking for AI]] | ⬜ Not Started | InfiniBand, NVLink, RoCE, interconnect troubleshooting |
+| 9 | [[M09 - Log Analysis and Troubleshooting]] | ⬜ Not Started | Real-world scenarios tying everything together |
 
 ## How This Works
 
@@ -22,6 +23,7 @@ Welcome to your structured AI learning path, Cynthia. This vault is your classro
 3. Check off exercises as you complete them using `- [x]` checkboxes
 4. Use the **Review Questions** to test yourself before moving on
 5. When you finish a module, update the status in the table above
+6. Ask Hermes anything — no question is too basic
 
 ## Quick Links
 

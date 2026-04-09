@@ -1,23 +1,24 @@
 # Hermes AI Learning Lab
 
-Structured curriculum for learning AI infrastructure operations from the ground up.
+Structured curriculum for learning AI software and infrastructure operations — built for someone who already knows Linux basics.
 
 ## Setup
 
-1. Clone this repo into your Obsidian vault (or open it as a vault)
-2. Start with `Home.md` — it's the landing page with the full curriculum
+1. Open this folder as an Obsidian vault
+2. Start with `Home.md`
 3. Work through modules in order
 
 ## Curriculum
 
-1. **Linux & CLI Foundations** — Command line basics through log analysis
-2. **Containers & Docker** — Docker, NVIDIA Container Runtime, GPU containers
-3. **Python for AI Ops** — Python basics through log parsing scripts
-4. **AI Inference Stack** — TensorRT, vLLM, Triton Inference Server
-5. **CUDA & GPU Computing** — GPU utilization, memory, NCCL errors
-6. **DGX Software Stack** — BMC, IGSM, NVSM, Skyplane
-7. **Networking for AI** — InfiniBand, NVLink, RoCE
-8. **Real-World Troubleshooting** — Reading real logs, diagnosing real issues
+1. **AI and ML Foundations** — Core concepts, no math, no code yet
+2. **The NVIDIA AI Software Stack** — CUDA, cuDNN, TensorRT, NCCL
+3. **Containers and AI Workloads** — Docker, NGC, NVIDIA Container Runtime
+4. **Python for AI Operations** — Reading scripts, working with model files
+5. **Inference Deep Dive** — vLLM, TensorRT-LLM, Triton Inference Server
+6. **Training Fundamentals** — Distributed training, parallelism, NCCL errors
+7. **DGX-HGX Software Stack** — BMC, IGSM, NVSM, firmware
+8. **Networking for AI** — InfiniBand, NVLink, RoCE
+9. **Log Analysis and Troubleshooting** — Real-world scenarios
 
 ---
 
