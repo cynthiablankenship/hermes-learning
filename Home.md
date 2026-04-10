@@ -6,8 +6,8 @@ Welcome to your structured AI learning path, Cynthia. This vault is your classro
 
 | # | Module | Status | Description |
 |---|--------|--------|-------------|
-| 1 | [[M01 - AI and ML Foundations]] | 🔵 In Progress | Core concepts — what AI/ML actually is, how models work, what GPUs do |
-| 2 | [[M02 - The NVIDIA AI Software Stack]] | ⬜ Not Started | CUDA, cuDNN, TensorRT, NCCL — the software layers on your hardware |
+| 1 | [[M01 - AI and ML Foundations]] | ✅ Complete | Core concepts — what AI/ML actually is, how models work, what GPUs do |
+| 2 | [[M02 - The NVIDIA AI Software Stack]] | 🔵 In Progress | CUDA, cuDNN, TensorRT, NCCL, driver, firmware, diagnostics |
 | 3 | [[M03 - Containers and AI Workloads]] | ⬜ Not Started | Docker, NGC containers, NVIDIA Container Runtime, running models |
 | 4 | [[M04 - Python for AI Operations]] | ⬜ Not Started | Reading AI scripts, working with model files, diagnostic Python |
 | 5 | [[M05 - Inference Deep Dive]] | ⬜ Not Started | vLLM, TensorRT-LLM, Triton Inference Server, serving models |
